@@ -17,6 +17,48 @@ html {
   box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 } */
 
+/***********************/
+/* new css parameters  */
+/***********************/
+
+.navbar-expand-md .main-menu {
+  text-align: center;
+}
+
+.navbar-expand-md .main-menu a {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 400;
+  display: inline-block;
+  padding: 30px 0 30px  0;
+  font-family: "Anton", sans-serif;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.navbar-expand-md .main-menu a:hover {
+  border-color: #FF4533;
+  color: #FF4533;
+  background: transparent;
+}
+
+.navbar-expand-md .main-menu a.active {
+  color: #FF4533;
+}
+
+/* line 187, ../../Arafath/CL/December/236. Event-02/HTML/scss/_header.scss */
+.navbar-expand-md .main-menu a.active::before {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+
+/***********************/
+/*        end          */
+/***********************/
+
 /* line 1, ../../Arafath/CL/December/236. Event-02/HTML/scss/_header.scss */
 .header-area {
   left: 0;
@@ -216,6 +258,8 @@ html {
   color: #FF4533;
   background: transparent;
 }
+
+
 
 /* line 122, ../../Arafath/CL/December/236. Event-02/HTML/scss/_header.scss */
 .header-area .main-header-area .main-menu {
