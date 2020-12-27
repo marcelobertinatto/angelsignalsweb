@@ -1,274 +1,335 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900");
 
-/* Provide sufficient contrast against white background */
-/* a {
-  color: #0366d6;
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
+s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+figure, header, nav, section, article, aside, footer, figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
 }
 
-code {
-  color: #e01a76;
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-} */
-
-
-body {
-  font-family: "Muli", sans-serif;
-  font-weight: normal;
-  font-style: normal;
+.clearfix {
+  display: inline-block;
 }
 
-/* line 25, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
-.img {
-  max-width: 100%;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
+html[xmlns] .clearfix {
+  display: block;
 }
 
-/* line 29, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
-a,
-.button {
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
+* html .clearfix {
+  height: 1%;
 }
 
-/* line 33, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
-a:focus,
-.button:focus, button:focus {
-  text-decoration: none;
-  outline: none;
-}
-
-/* line 38, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
-a:focus {
-  text-decoration: none;
-}
-
-/* line 41, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
-a:focus,
-a:hover,
-.portfolio-cat a:hover,
-.footer -menu li a:hover {
-  text-decoration: none;
-}
-
-/* line 47, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
-a,
-button {
-  color: #1F1F1F;
-  outline: medium none;
-}
-
-/* line 52, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
-h1, h2, h3, h4, h5 {
-  font-family: "Anton", sans-serif;
-  color: #001D38;
-}
-
-/* line 56, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a {
-  color: inherit;
-}
-
-/* line 64, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
-a {
-  font-family: "Muli", sans-serif;
-}
-
-/* line 67, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
-input::placeholder {
-  font-family: "Muli", sans-serif;
-}
-
-/* line 70, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
-textarea::placeholder {
-  font-family: "Muli", sans-serif;
-}
-
-/* line 73, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
-ul {
-  margin: 0px;
-  padding: 0px;
-}
-
-/* line 77, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
-li {
+ul, li {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
-/* line 80, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
-p {
-  font-size: 20px;
-  color: #AAB1B7;
-  line-height: 32px;
-  margin-bottom: 0;
+header, nav, section, article, aside, footer, hgroup {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Raleway", sans-serif;
   font-weight: 400;
+  background-color: #fff;
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0px;
   margin-bottom: 0px;
-  font-family: "Muli", sans-serif;
 }
 
-/* line 90, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
-label {
-  color: #7e7e7e;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 400;
+ul {
+  margin-bottom: 0px;
 }
 
-/* line 96, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
-*::-moz-selection {
-  background: #444;
-  color: #fff;
-  text-shadow: none;
+/* 
+---------------------------------------------
+global styles
+--------------------------------------------- 
+*/
+html,
+body {
+  background: #fff;
+  font-family: "Raleway", sans-serif;
 }
 
-/* line 101, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
-::-moz-selection {
-  background: #444;
-  color: #fff;
-  text-shadow: none;
-}
-
-/* line 106, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
 ::selection {
-  background: #444;
+  background: #ff589e;
   color: #fff;
-  text-shadow: none;
 }
 
-/* line 111, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
-*::-webkit-input-placeholder {
-  color: #cccccc;
-  font-size: 14px;
-  opacity: 1;
+::-moz-selection {
+  background: #ff589e;
+  color: #fff;
 }
 
-/* line 116, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
-*:-ms-input-placeholder {
-  color: #cccccc;
-  font-size: 14px;
-  opacity: 1;
+.section {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 80px;
 }
 
-/* line 121, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
-*::-ms-input-placeholder {
-  color: #cccccc;
-  font-size: 14px;
-  opacity: 1;
+.section.colored {
+  background: #f2f2fe;
 }
 
-/* line 126, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
-*::placeholder {
-  color: #cccccc;
-  font-size: 14px;
-  opacity: 1;
+.hr {
+  bottom: 0px;
+  width: 100%;
+  height: 1px;
+  margin-top: 100px;
+  border-bottom: 1px solid #eee;
 }
 
-/* line 132, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
-h3 {
+.left-heading.light .section-title {
+  color: #ffffff;
+}
+
+.left-heading .section-title {
+  font-weight: 500;
   font-size: 24px;
-}
-
-/* line 136, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
-.black_bg {
-  background: #000000;
-}
-
-/* line 139, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
-.mb-65 {
-  margin-bottom: 67px;
-}
-
-/* line 144, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
-.white-bg {
-  background: #ffffff;
-}
-
-/* line 147, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
-.gray-bg {
-  background: #f5f5f5;
-}
-
-/* line 152, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
-.overlay {
+  line-height: 42px;
+  color: #1e1e1e;
+  letter-spacing: 0.25px;
+  margin-bottom: 30px;
   position: relative;
-  z-index: 0;
 }
 
-/* line 156, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
-.overlay::before {
-  position: absolute;
-  content: "";
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.3+0,1+100 */
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, black 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, black 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, black 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d000000', endColorstr='#000000',GradientType=0 );
-  /* IE6-9 */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+.center-heading {
+  text-align: center;
 }
 
-/* line 171, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
-.overlay2 {
-  position: relative;
-  z-index: 0;
+.center-heading .section-title {
+  font-weight: 500;
+  font-size: 28px;
+  color: #1e1e1e;
+  letter-spacing: 1.75px;
+  line-height: 38px;
+  margin-bottom: 20px;
 }
 
-/* line 175, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
-.overlay2::before {
-  position: absolute;
-  content: "";
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&1+0,0.8+100 */
-  background: -moz-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.8) 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.8) 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, black 0%, rgba(0, 0, 0, 0.8) 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#cc000000',GradientType=0 );
-  /* IE6-9 */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+.center-heading.colored .section-title {
+  color: #ffffff;
 }
 
-/* line 190, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
-.overlay_03 {
-  position: relative;
-  z-index: 0;
+.center-text {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  color: #777;
+  line-height: 28px;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
 }
 
-/* line 194, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
-.overlay_03::before {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background: #001D38;
-  opacity: .6;
-  content: '';
-  z-index: -1;
+.center-text.colored {
+  color: #fff;
+}
+
+.center-text p {
+  font-size: 15px;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.left-text {
+  font-weight: 400;
+  font-size: 16px;
+  color: #777;
+  line-height: 28px;
+  letter-spacing: 1px;
+}
+
+.left-text.light {
+  color: #fff;
+}
+
+.left-text p {
+  margin-bottom: 30px;
+}
+
+.left-text p.dark {
+  color: #3B566E;
+}
+
+.padding-bottom-top-60 {
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+}
+
+.padding-bottom-80 {
+  padding-bottom: 80px !important;
+}
+
+.padding-bottom-100 {
+  padding-bottom: 100px !important;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #eee !important;
+}
+
+.mbottom-30 {
+  margin-bottom: 30px !important;
+}
+
+.align-self-center {
+  -ms-flex-item-align: center !important;
+  align-self: center !important;
+}
+
+.align-self-bottom {
+  -ms-flex-item-align: flex-end !important;
+  align-self: flex-end !important;
+}
+
+.padding-bottom-0 {
+  padding-bottom: 0px !important;
+}
+
+.padding-top-0 {
+  padding-top: 0px !important;
+}
+
+.padding-top-80 {
+  padding-top: 80px !important;
+}
+
+.padding-top-70 {
+  padding-top: 70px !important;
+}
+
+.padding-top-20 {
+  padding-top: 20px !important;
+}
+
+.margin-bottom-0 {
+  margin-bottom: 0px !important;
+}
+
+.margin-bottom-30 {
+  margin-bottom: 30px !important;
+}
+
+.margin-top-30 {
+  margin-top: 30px !important;
+}
+
+.margin-top-15 {
+  margin-top: 15px !important;
+}
+
+.margin-bottom-45 {
+  margin-bottom: 45px !important;
+}
+
+.margin-bottom-20 {
+  margin-bottom: 20px !important;
+}
+
+.margin-bottom-60 {
+  margin-bottom: 60px !important;
+}
+
+.margin-bottom-100 {
+  margin-bottom: 100px !important;
+}
+
+@media (max-width: 991px) {
+  html, body {
+    overflow-x: hidden;
+  }
+  .mobile-top-fix {
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+  .mobile-bottom-fix {
+    margin-bottom: 30px;
+  }
+  .mobile-bottom-fix-big {
+    margin-bottom: 60px;
+  }
+}
+
+a.main-button-slider {
+  font-size: 13px;
+  border-radius: 20px;
+  padding: 12px 20px;
+  background-color: #ff589e;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.25px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+a.main-button-slider:hover {
+  background-color: #8261ee;
+}
+
+a.main-button {
+  font-size: 13px;
+  border-radius: 20px;
+  padding: 12px 20px;
+  background-color: #8261ee;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.25px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+a.main-button:hover {
+  background-color: #ff589e;
+}
+
+button.main-button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  border-radius: 20px;
+  padding: 12px 20px;
+  background-color: #8261ee;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.25px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+button.main-button:hover {
+  background-color: #ff589e;
 }

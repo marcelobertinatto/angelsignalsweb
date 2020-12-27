@@ -8,13 +8,17 @@ import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
 import { HomeBannerComponent } from './home-banner/home-banner.component';
+import { TalkToUsComponent } from './Talk-To-Us/Talk-To-Us.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
-  declarations: [		
+  declarations: [					
     AppComponent,
     NavMenuComponent,
     HomeComponent,
-      HomeBannerComponent
+      HomeBannerComponent,
+      TalkToUsComponent,
+      FooterComponent
    ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
