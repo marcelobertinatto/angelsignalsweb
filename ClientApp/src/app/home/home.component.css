@@ -17,7 +17,7 @@
   }
   
   .features-small-item:hover .icon {
-    background-color: #ff589e;
+    background-color: #11ab1e;/* #ff589e;*/
   }
   
   .features-small-item .icon {
@@ -31,7 +31,7 @@
     margin: auto;
     position: relative;
     margin-bottom: 30px;
-    background: #8261ee;
+    background: #fd0305e3;/* #8261ee;*/
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
@@ -100,10 +100,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    background-image: url(../../assets/img/work-process-bg.png);
+    /* background-image: url(../../assets/img/home-bg2.jpeg); */
+    background-color: #000;
     z-index: 2;
     top: -20%;
     left: -20%;
+    /* opacity: 0.2; */
   }
   
   .mini .mini-content {
@@ -133,7 +135,9 @@
   }
   
   .mini .mini-content .info h1 {
-    color: #fff;
+    /* color: #000; */
+    color: rgb(241, 196, 15);
+    text-shadow: rgb(241, 196, 15) 0px 0px 5px;
     font-weight: 500;
     font-size: 28px;
     letter-spacing: 0.25px;
@@ -143,7 +147,9 @@
   .mini .mini-content .info p {
     letter-spacing: 1px;
     margin-bottom: 40px;
-    color: #fff;
+    /* color: #000; */
+    color: rgb(241, 196, 15);
+    text-shadow: rgb(241, 196, 15) 0px 0px 5px;
     letter-spacing: 0.25px;
     line-height: 26px;
     font-weight: 400;
@@ -223,7 +229,8 @@
     width: 140%;
     height: 140%;
     opacity: .90;
-    background-image: url(../../assets/img/fun-facts-bg.png);
+    /* background-image: url(../../assets/img/fun-facts-bg.png); */
+    background-color: #000;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -292,7 +299,9 @@
     font-size: 36px;
     letter-spacing: 0.25px;
     margin-bottom: 10px;
-    color: #fff;
+    /* color: #fff; */
+    color: #fd0305e3;
+    text-shadow: #fd0305e3 0px 0px 5px;
     margin-top: 120px;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
@@ -303,7 +312,9 @@
   .counter .content .count-item span {
     display: block;
     text-align: center;
-    color: #fff;
+    /* color: #fff; */
+    color: rgb(241, 196, 15);
+    text-shadow: rgb(241, 196, 15) 0px 0px 5px;
     font-weight: 500;
     font-size: 17px;
     letter-spacing: 0.25px;
@@ -447,7 +458,7 @@
   }
   
   .pricing-item.active .pricing-body .price-wrapper {
-    background-color: #ff589e;
+    background-color: #fd0305e3;/*#ff589e;*/
   }
   
   .pricing-item.active .pricing-body .price-wrapper .currency {
@@ -490,7 +501,7 @@
     text-align: center;
     padding-top: 20px;
     padding-bottom: 13px;
-    background: #8261ee;
+    background: #11ab1e;/*#8261ee;*/
     width: 80%;
     margin: auto;
     margin-bottom: 40px;
@@ -539,6 +550,45 @@
   .pricing-item .pricing-footer {
     text-align: center;
     margin-top: 50px;
+  }
+
+  a.main-button {
+    font-size: 13px;
+    border-radius: 20px;
+    padding: 12px 20px;
+    background-color: #11ab1e;/*#8261ee;*/
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 0.25px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  
+  a.main-button:hover {
+    background-color: #680d0b;/*#ff589e;*/
+  }
+  
+  button.main-button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    border-radius: 20px;
+    padding: 12px 20px;
+    background-color: #11ab1e;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 0.25px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  
+  button.main-button:hover {
+    background-color: #680d0b;  
   }
 
   .blog-post-thumb {

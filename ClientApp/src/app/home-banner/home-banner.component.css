@@ -2,7 +2,7 @@ a.main-button-slider {
   font-size: 13px;
   border-radius: 20px;
   padding: 12px 20px;
-  background-color: #ff589e;
+  background-color: #11ab1e;/* #ff589e;*/
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 0.25px;
@@ -13,14 +13,14 @@ a.main-button-slider {
 }
 
 a.main-button-slider:hover {
-  background-color: #8261ee;
+  background-color: #680d0b;/* #8261ee;*/
 }
 
 a.main-button {
   font-size: 13px;
   border-radius: 20px;
   padding: 12px 20px;
-  background-color: #8261ee;
+  background-color: #11ab1e;/* #8261ee;*/
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 0.25px;
@@ -40,7 +40,8 @@ a.main-button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(../../assets/img/banner-bg.png);
+  background-image: url(../../assets/img/home-bg.png);
+  /* background-color: black; */
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; 
@@ -61,7 +62,9 @@ a.main-button:hover {
   line-height: 54px;
   letter-spacing: 1.4px;
   margin-bottom: 30px;
-  color: #fff;
+  /* color: #fff; */
+  color: rgb(241, 196, 15);
+  text-shadow: rgb(241, 196, 15) 0px 0px 5px;
 }
 
 .welcome-area .header-text p {
