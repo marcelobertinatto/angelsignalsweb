@@ -295,7 +295,8 @@ header
 
 .header-area.header-sticky .navbar-nav li a.active {
   /* color: #ff589e; */
-  color: rgb(78,228,78);
+  /* color: rgb(78,228,78); */
+  color:rgb(78,228,78);/* #fd0305e3;*/
 }
 
 .custom-toggler .navbar-toggler-icon {
