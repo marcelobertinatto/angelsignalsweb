@@ -25,7 +25,8 @@ import { FooterComponent } from './footer/footer.component';
     HttpClientModule,
     FormsModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent, pathMatch: 'full' }
+      { path: '', component: HomeComponent, pathMatch: 'full' }, 
+      { path: 'acesso', component: HomeComponent, pathMatch: 'full' }
     ])
   ],
   providers: [],

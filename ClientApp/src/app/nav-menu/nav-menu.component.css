@@ -122,7 +122,7 @@ header
   box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
   border-radius: 40px;
   min-height: 80px;
-  background: #fff;
+  background: #000;
 }
 
 .header-area .navbar .logo {
@@ -167,8 +167,8 @@ header
 .header-area .navbar .navbar-nav li a {
   display: block;
   font-weight: 500;
-  font-size: 15px;
-  color: #000;
+  font-size: 18px;
+  color: #fff;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
