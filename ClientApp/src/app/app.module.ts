@@ -10,15 +10,17 @@ import { HomeComponent } from './home/home.component';
 import { HomeBannerComponent } from './home-banner/home-banner.component';
 import { TalkToUsComponent } from './Talk-To-Us/Talk-To-Us.component';
 import { FooterComponent } from './footer/footer.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 @NgModule({
-  declarations: [					
+  declarations: [						
     AppComponent,
     NavMenuComponent,
     HomeComponent,
       HomeBannerComponent,
       TalkToUsComponent,
-      FooterComponent
+      FooterComponent,
+      LandingPageComponent
    ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -26,6 +28,7 @@ import { FooterComponent } from './footer/footer.component';
     FormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' }, 
+      { path: 'landing-page', component: LandingPageComponent, pathMatch: 'full' }, 
       { path: 'acesso', component: HomeComponent, pathMatch: 'full' }
     ])
   ],
