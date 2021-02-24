@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { UserService } from '../services/user.service';
 
 @Component({
   selector: 'app-landing-page',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingPageComponent implements OnInit {
 
-  constructor() { }
+  registerform: FormGroup;
+
+  constructor(private formBuilder: FormBuilder, private user: UserService) { }
 
   ngOnInit() {
+    this.validation();
+  }
+
+  validation(){
+
+    this.registerform = this.formBuilder.group({
+      email: [null, Validators.compose([Validators.required, Validators.email])]
+      //name: [null, Validators.compose([Validators.required])]
+    })
   }
 
 }
