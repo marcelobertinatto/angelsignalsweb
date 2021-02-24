@@ -826,7 +826,8 @@ a {
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.1);
   min-height: 77px;
   transition: all .3s;
-  background: #040402;
+  /* background: #040402; */
+  background: #000000;
 }
 .cid-s1YLZwONfz .navbar.opened {
   transition: all .3s;
@@ -1151,7 +1152,8 @@ a {
 .cid-s1YLYYtmhw {
   padding-top: 105px;
   padding-bottom: 0px;
-  background-color: #040402;
+  /* background-color: #040402; */
+  background-color: black;
 }
 .cid-s1YLYYtmhw H1 {
   color: #e2090d;
@@ -1637,7 +1639,7 @@ a {
 .cid-s1YMk5s30h {
   padding-top: 90px;
   padding-bottom: 90px;
-  background-color: #040402;
+  background-color: #040402;  
 }
 .cid-s1YMk5s30h img {
   width: 100px;
@@ -1708,7 +1710,8 @@ a {
 .cid-s1YMhHggsQ {
   padding-top: 90px;
   padding-bottom: 90px;
-  background-color: #191919;
+  /* background-color: #191919; */
+  background-color: black;
 }
 .cid-s1YMhHggsQ .mbr-overlay {
   background-color: #ffffff;
