@@ -8,7 +8,7 @@ import { User } from '../Model/user';
 })
 export class UserService {
 
-  private baseURL = 'http://localhost:56590/';
+  private baseURL = 'http://localhost:5001/';
 
 constructor(private httpClient: HttpClient) { }
 
@@ -20,6 +20,10 @@ get headers(): HttpHeaders {
 
 public registerUser(u: User) {
   return this.httpClient.post(this.baseURL + 'api/user/registeruser', JSON.stringify(u), {headers: this.headers});
+}
+
+public sendTelegramMessage(user: User){
+  return this.httpClient.post(this.baseURL + 'api/user/telegrammessagetouser', JSON.stringify(user), {headers: this.headers});
 }
 
 }
