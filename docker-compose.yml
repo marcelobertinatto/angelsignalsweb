@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  angelsignalsweb:
+    image: ${DOCKER_REGISTRY-}angelsignalsweb
+    build:
+      context: .
+      dockerfile: ./Dockerfile

@@ -61,7 +61,7 @@ export class LandingPageComponent implements OnInit {
                 'success'
               )
               window.open("https://bit.ly/CadastroIqOptionn","_blank");  
-              this._router.navigate(['/video-aulas']);
+              this._router.navigate(['/video-aulas/'], { fragment: 'header2-0' });
               //this.sendTelegramMessage(this.u);            
             }
           })

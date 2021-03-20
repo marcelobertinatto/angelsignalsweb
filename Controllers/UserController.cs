@@ -1,15 +1,9 @@
 ﻿using System;
-using System.Linq;
-using System.Net.Http;
-using System.Text;
 using AngelSignalsWeb.Data;
 using AngelSignalsWeb.Model;
 using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
-using TeleSharp.TL;
-using TLSharp.Core;
 
 namespace AngelSignalsWeb.Controllers
 {

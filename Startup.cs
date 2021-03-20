@@ -23,6 +23,13 @@ namespace AngelSignalsWeb
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //services.AddCors(o => o.AddPolicy("MyPolicy", builder =>
+            //{
+            //    builder.AllowAnyOrigin()
+            //           .AllowAnyMethod()
+            //           .AllowAnyHeader();
+            //}));
+
             string mySqlConnectionStr = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContextPool<Context>(options => options.UseMySql(mySqlConnectionStr));
             //services.AddControllers().AddNewtonsoftJson();
@@ -43,6 +50,8 @@ namespace AngelSignalsWeb
             IMapper mapper = mappingConfig.CreateMapper();
             services.AddSingleton(mapper);
             #endregion
+
+            services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -57,7 +66,19 @@ namespace AngelSignalsWeb
                 app.UseExceptionHandler("/Error");
             }
 
+            //app.UseCors("MyPolicy");
+
             app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
+            //Cors
+            //app.UseCors(builder =>
+            //{
+            //    builder.AllowAnyHeader();
+            //    builder.AllowAnyMethod();
+            //    builder.AllowCredentials();
+            //    builder.AllowAnyOrigin(); // For anyone access.
+            //    builder.Build();
+            //    //corsBuilder.WithOrigins("http://localhost:56573"); // for a specific url.
+            //});
 
             app.UseStaticFiles();
             if (!env.IsDevelopment())
