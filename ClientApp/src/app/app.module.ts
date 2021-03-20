@@ -32,8 +32,8 @@ import { VideoAulasComponent } from './video-aulas/video-aulas.component';
     RxReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' }, 
-      { path: 'landing-page', component: LandingPageComponent, pathMatch: 'full' },
-      { path: 'video-aulas', component: VideoAulasComponent, pathMatch: 'full' }, 
+      { path: 'acesso/landing-page', component: LandingPageComponent, pathMatch: 'full' },
+      { path: 'acesso/video-aulas', component: VideoAulasComponent, pathMatch: 'full' }, 
       { path: 'acesso', component: HomeComponent, pathMatch: 'full' }
     ])
   ],
