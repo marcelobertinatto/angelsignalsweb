@@ -12,9 +12,12 @@ import { FooterComponent } from './footer/footer.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { RxReactiveFormsModule } from '@rxweb/reactive-form-validators';
 import { VideoAulasComponent } from './video-aulas/video-aulas.component';
+import { MisterxComponent } from './misterx/misterx.component';
+import { VipComponent } from './vip/vip.component';
+import { CursoComponent } from './curso/curso.component';
 
 @NgModule({
-  declarations: [							
+  declarations: [										
     AppComponent,
     NavMenuComponent,
     HomeComponent,
@@ -22,7 +25,10 @@ import { VideoAulasComponent } from './video-aulas/video-aulas.component';
       TalkToUsComponent,
       FooterComponent,
       LandingPageComponent,
-      VideoAulasComponent
+      VideoAulasComponent,
+      MisterxComponent,
+      VipComponent,
+      CursoComponent
    ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -31,10 +37,14 @@ import { VideoAulasComponent } from './video-aulas/video-aulas.component';
     ReactiveFormsModule,
     RxReactiveFormsModule,
     RouterModule.forRoot([
-      // { path: '', component: HomeComponent, pathMatch: 'full' }, 
-      { path: 'landing-page', component: LandingPageComponent, pathMatch: 'full' },
-      { path: 'video-aulas', component: VideoAulasComponent, pathMatch: 'full' }, 
-      { path: 'acesso', component: HomeComponent, pathMatch: 'full' }
+      // { path: '**', redirectTo: 'acesso' },
+      { path: '', component: HomeComponent, pathMatch: 'full' }, 
+      { path: 'landing-page', component: LandingPageComponent },
+      { path: 'video-aulas', component: VideoAulasComponent }, 
+      { path: 'acesso', component: HomeComponent },
+      { path: 'misterx', component: MisterxComponent },
+      { path: 'vip', component: VipComponent },
+      { path: 'curso', component: CursoComponent }
     ])
   ],
   providers: [],
