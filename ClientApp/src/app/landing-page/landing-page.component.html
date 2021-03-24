@@ -31,10 +31,12 @@
             <a class="nav-link link text-white display-4" href="#">Pricing</a>
           </li> -->
           <li class="nav-item">
-            <a class="nav-link link text-white display-4" href="/landing-page/#depoimentos">Depoimentos</a>
+            <a class="nav-link link text-white display-4" pageScroll [pageScrollOffset]="0" [pageScrollDuration]="2000" [pageScrollEasing]="myEasing" 
+            [pageScrollInterruptible]="false" href="#depoimentos">Depoimentos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link link text-white display-4" href="/landing-page/#contact">Cadastro</a>
+            <a class="nav-link link text-white display-4" pageScroll [pageScrollOffset]="0" [pageScrollDuration]="2000" [pageScrollEasing]="myEasing" 
+            [pageScrollInterruptible]="false" href="#contact">Fale Conosco</a>
           </li>
         </ul>
         <div class="icons-menu">
@@ -49,7 +51,8 @@
           </a>
         </div>
         <div class="navbar-buttons mbr-section-btn">
-          <a class="btn btn-sm btn-primary-outline display-4" href="/landing-page/#contact">
+          <a class="btn btn-sm btn-primary-outline display-4" pageScroll [pageScrollOffset]="0" [pageScrollDuration]="2000" [pageScrollEasing]="myEasing" 
+          [pageScrollInterruptible]="false" href="#contact">
               <span class="mobi-mbri mobi-mbri-rocket mbr-iconfont mbr-iconfont-btn">
                 <i class="far fa-hand-pointer"></i>
                 </span>
@@ -73,7 +76,7 @@
                     todos os dias com este novo método Europeu.
                 </p>
                 <div class="mbr-section-btn">
-                    <a class="btn btn-sm btn-primary-outline display-4" href="/landing-page/#contact">
+                    <a class="btn btn-sm btn-primary-outline display-4" pageScroll href="#contact">
                         <span class="mobi-mbri mobi-mbri-paper-plane mbr-iconfont mbr-iconfont-btn">
                             <i class="far fa-hand-pointer"></i>
                         </span>OBTER MÉTODO AGORA
@@ -92,9 +95,9 @@
     </div>
 </section>
 
-<section class="testimonials2 cid-s1YMk5s30h" id="testimonials2-a">
+<section class="testimonials2 cid-s1YMk5s30h" id="depoimentos">
        
-  <div class="container-fluid mbr-white" id="depoimentos">
+  <div class="container-fluid mbr-white" >
       <div class="row justify-content-center">
           <div class="col-12 col-md-12 col-lg-7 pb-3">
               <h4 class="main-title align-center pb-3 mbr-bold mbr-black mbr-fonts-style display-2">Depoimentos</h4>              
@@ -120,11 +123,11 @@
   </div>
 </section>
 
-<section class="form1 cid-s1YMhHggsQ" id="form1-9">
+<section class="form1 cid-s1YMhHggsQ" id="contact">
     <div class="container">
         <div class="row">
             <div class="col-lg-10 mx-auto mbr-form">
-                <form [formGroup]="registerform" class="mbr-form form-with-styler" id="contact">
+                <form [formGroup]="registerform" class="mbr-form form-with-styler" >
                   <div class="dragArea form-row">
                     <div class="col-lg-12 col-md-12 col-sm-12">
                       <h4 class="mbr-bold mbr-fonts-style display-2">Faça o seu cadastro agora</h4>
@@ -178,4 +181,6 @@
         </div>
     </div>
 </section>
+
+
 

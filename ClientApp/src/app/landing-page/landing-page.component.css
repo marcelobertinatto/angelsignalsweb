@@ -1639,7 +1639,7 @@ a {
 .cid-s1YMk5s30h {
   padding-top: 90px;
   padding-bottom: 90px;
-  background-color: #040402;  
+  background: #000000 !important;
 }
 .cid-s1YMk5s30h img {
   width: 100px;
@@ -1649,6 +1649,7 @@ a {
 }
 .cid-s1YMk5s30h .container-fluid {
   padding: 0;
+  background: #000000 !important;
 }
 .cid-s1YMk5s30h .card-wrapper {
   background: #191919;
@@ -3318,3 +3319,5 @@ a {
           top: 0;
           left: -2400px;
       }
+
+    

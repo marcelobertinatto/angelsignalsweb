@@ -27,6 +27,8 @@
     "bootstrap": "^4.5.3",
     "core-js": "^3.3.3",
     "jquery": "^3.5.1",
+    "ngx-page-scroll": "^7.0.4",
+    "ngx-page-scroll-core": "^7.0.4",
     "oidc-client": "^1.9.1",
     "popper.js": "^1.16.0",
     "rxjs": "^6.5.3",

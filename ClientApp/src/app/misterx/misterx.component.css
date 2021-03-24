@@ -11,10 +11,33 @@
     height: 100vh;
   }
 
+  section {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 65vw;
+  }
+
   .home-feature {
-    padding-top: 210px;  
+    padding-top: 210px; 
     background-image: url(../../assets/img/home-bg.png);  
   }
+
+  /* ----------- Non-Retina Screens ----------- */
+@media screen 
+and (min-device-width: 1200px) 
+and (max-device-width: 1600px) 
+and (-webkit-min-device-pixel-ratio: 1) { 
+  
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen 
+and (min-device-width: 1200px) 
+and (max-device-width: 1600px) 
+and (-webkit-min-device-pixel-ratio: 2)
+and (min-resolution: 192dpi) { 
+  
+}
   
   .misterx .header-text {
     position: absolute;

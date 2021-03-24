@@ -15,6 +15,7 @@ import { VideoAulasComponent } from './video-aulas/video-aulas.component';
 import { MisterxComponent } from './misterx/misterx.component';
 import { VipComponent } from './vip/vip.component';
 import { CursoComponent } from './curso/curso.component';
+import { NgxPageScrollModule } from 'ngx-page-scroll';
 
 @NgModule({
   declarations: [										
@@ -35,6 +36,7 @@ import { CursoComponent } from './curso/curso.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    NgxPageScrollModule,
     RxReactiveFormsModule,
     RouterModule.forRoot([
       // { path: '**', redirectTo: 'acesso' },
