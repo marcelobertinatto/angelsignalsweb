@@ -17,9 +17,10 @@ import { VipComponent } from './vip/vip.component';
 import { CursoComponent } from './curso/curso.component';
 import { NgxPageScrollModule } from 'ngx-page-scroll';
 import { MisterxOfertaComponent } from './misterx-oferta/misterx-oferta.component';
+import { NavMenuOfertaComponent } from './nav-menu-oferta/nav-menu-oferta.component';
 
 @NgModule({
-  declarations: [											
+  declarations: [												
     AppComponent,
     NavMenuComponent,
     HomeComponent,
@@ -31,7 +32,8 @@ import { MisterxOfertaComponent } from './misterx-oferta/misterx-oferta.componen
       MisterxComponent,
       VipComponent,
       CursoComponent,
-      MisterxOfertaComponent
+      MisterxOfertaComponent,
+      NavMenuOfertaComponent
    ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
