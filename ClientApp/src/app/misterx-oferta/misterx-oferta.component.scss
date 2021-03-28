@@ -26,6 +26,25 @@ a.main-button-slider:hover {
   background-color: #680d0b;/* #8261ee;*/
 }
 
+a.main-button-slider1 {
+  font-size: 15px;
+  border-radius: 20px;
+  padding: 12px 20px;
+  background-color: #680d0b;/* #ff589e;*/
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.25px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+a.main-button-slider1:hover {
+  background-color: #11ab1e;/* #8261ee;*/
+}
+
+
 a.main-button {
   font-size: 13px;
   border-radius: 20px;
@@ -382,7 +401,7 @@ a.main-button:hover {
   font-weight: 400;
   font-size: 26px;
   color: #fff;
-  line-height: 28px;
+  // line-height: 28px;
   letter-spacing: 0.25px;
   margin-bottom: 40px;
   position: relative;
