@@ -24,12 +24,6 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav nav-dropdown my-auto" data-app-modern-menu="true">
-          <!-- <li class="nav-item">
-            <a class="nav-link link text-white display-4" href="#">Team</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link link text-white display-4" href="#">Pricing</a>
-          </li> -->
           <li class="nav-item">
             <a class="nav-link link text-white display-4" pageScroll [pageScrollOffset]="0" [pageScrollDuration]="2000" [pageScrollEasing]="myEasing" 
             [pageScrollInterruptible]="false" href="#depoimentos">Depoimentos</a>
@@ -64,7 +58,7 @@
   </nav>
 </section>
 
-<section class="header2 cid-s1YLYYtmhw" id="header2-0">
+<!-- <section class="header2 cid-s1YLYYtmhw" id="header2-0">
     <div class="container align-left">
         <div class="row justify-content-center">
             <div class="mbr-white col-md-12 my-auto md-pb col-lg-6">                
@@ -93,10 +87,44 @@
             </div>
         </div>
     </div>
+</section> -->
+
+<section class="header2 cid-s1YLYYtmhw" id="header2-0">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="mbr-white col-md-12 my-auto md-pb col-lg-12">                
+                <h1 class="mbr-section-title mbr-white pb-3 mbr-fonts-style display-1 mt-3">
+                    <strong>MÉTODO EUROPEU AGORA NO BRASIL</strong>
+                </h1>
+                <p class="mbr-text mbr-white mbr-light mbr-fonts-style display-7 align-center">Garanta agora este mini curso gratuito. 
+                  Iremos te mostrar como é fácil ganhar dinheiro com opções binárias utilizando o nosso método! 
+                </p>
+            </div>
+        </div>
+        <div class="row">
+          <div class="card col-12 img-col col-md-12 col-lg-12">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/Htbp4Y9nFGM"></iframe>
+            </div>    
+            <p class="mbr-text pb-3 mbr-white mbr-light mbr-fonts-style display-7 mt-3 align-center">Descubra como lucrar na IQ OPTION
+              todos os dias com este novo método Europeu.<br>
+            </p>            
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="mbr-section-btn">
+            <a class="btn btn-sm btn-primary-outline display-4" pageScroll href="#contact">
+                <span class="mobi-mbri mobi-mbri-paper-plane mbr-iconfont mbr-iconfont-btn">
+                    <i class="far fa-hand-pointer"></i>
+                </span>OBTER MÉTODO AGORA
+            </a>
+        </div>
+        </div>
+    </div>
 </section>
 
-<section class="testimonials2 cid-s1YMk5s30h" id="depoimentos">
-       
+
+<section class="testimonials2 cid-s1YMk5s30h" id="depoimentos">       
   <div class="container-fluid mbr-white" >
       <div class="row justify-content-center">
           <div class="col-12 col-md-12 col-lg-7 pb-3">
@@ -118,7 +146,6 @@
                   </div>
               </div>
           </div>
-
       </div>
   </div>
 </section>
@@ -174,12 +201,8 @@
                           </span>
                           CADASTRAR
                         </button>
-                        <ng-container *ngIf="isSaving;">
-                          <div class="my-overlay" *ngIf="showOverlay">
-                            <!-- <i class="fa fa-spinner fa-spin" aria-hidden="true"></i> -->
-                            <div class="loader">Loading...</div>
-                          </div>                          
-                        </ng-container>                        
+                        <ngx-spinner bdColor = "rgba(0, 0, 0, 0.8)" size = "large" color = "#e92d2d" type = "line-scale-pulse-out" 
+                        [fullScreen] = "true"><p style="color: red" > Carregando... </p></ngx-spinner>       
                       </div>
                   </div>
                 </form>

@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
@@ -19,6 +19,7 @@ import { NgxPageScrollModule } from 'ngx-page-scroll';
 import { MisterxOfertaComponent } from './misterx-oferta/misterx-oferta.component';
 import { NavMenuOfertaComponent } from './nav-menu-oferta/nav-menu-oferta.component';
 import { CursoOfertaComponent } from './curso-oferta/curso-oferta.component';
+import { NgxSpinnerModule, NgxSpinnerService } from 'ngx-spinner';
 
 @NgModule({
   declarations: [													
@@ -43,6 +44,7 @@ import { CursoOfertaComponent } from './curso-oferta/curso-oferta.component';
     FormsModule,
     ReactiveFormsModule,
     NgxPageScrollModule,
+    NgxSpinnerModule,
     RxReactiveFormsModule,
     RouterModule.forRoot([
       // { path: '**', redirectTo: 'acesso' },
@@ -57,7 +59,8 @@ import { CursoOfertaComponent } from './curso-oferta/curso-oferta.component';
       { path: 'curso-oferta', component: CursoOfertaComponent }
     ])
   ],
-  providers: [],
+  providers: [NgxSpinnerService],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

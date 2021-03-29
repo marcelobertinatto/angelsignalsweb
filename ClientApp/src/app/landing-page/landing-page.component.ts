@@ -5,6 +5,7 @@ import { User } from '../Model/user';
 import { UserService } from '../services/user.service';
 import Swal from 'sweetalert2';
 import { Router } from '@angular/router';
+import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
   selector: 'app-landing-page',
@@ -15,9 +16,8 @@ export class LandingPageComponent implements OnInit {
 
   registerform: FormGroup;
   public u: User;
-  public isSaving = false
 
-  constructor(private formBuilder: FormBuilder, private userService: UserService,private _router: Router) { }
+  constructor(private formBuilder: FormBuilder, private userService: UserService,private _router: Router,private spinner: NgxSpinnerService) { }
 
   ngOnInit() {
     this.validation();
@@ -43,10 +43,11 @@ export class LandingPageComponent implements OnInit {
     })
     
     if (this.registerform.valid) {
-      this.isSaving = true;
+      this.spinner.show();
       this.u = this.registerform.value;
       this.userService.registerUser(this.u).subscribe(
         data => {
+          this.spinner.hide();
           swalWithBootstrapButtons.fire({
             title: 'Último passo para você receber seu curso',
             text: "Faça o seu cadastro no link da IQ Option clicando no link abaixo e você será redirecionado "+
@@ -56,8 +57,7 @@ export class LandingPageComponent implements OnInit {
             confirmButtonText: 'Cadastrar na IQOption',            
             reverseButtons: true
           }).then((result) => {
-            if (result.isConfirmed) {
-              this.isSaving = false
+            if (result.isConfirmed) {              
               swalWithBootstrapButtons.fire(
                 'A Angel Signals Brasil Agradece!',
                 'Você será redirecionado para o mini curso europeu do nosso Trader X. Aproveite!!',
