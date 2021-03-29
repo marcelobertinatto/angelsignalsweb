@@ -15,6 +15,7 @@ export class LandingPageComponent implements OnInit {
 
   registerform: FormGroup;
   public u: User;
+  public isSaving = false
 
   constructor(private formBuilder: FormBuilder, private userService: UserService,private _router: Router) { }
 
@@ -42,6 +43,7 @@ export class LandingPageComponent implements OnInit {
     })
     
     if (this.registerform.valid) {
+      this.isSaving = true;
       this.u = this.registerform.value;
       this.userService.registerUser(this.u).subscribe(
         data => {
@@ -55,6 +57,7 @@ export class LandingPageComponent implements OnInit {
             reverseButtons: true
           }).then((result) => {
             if (result.isConfirmed) {
+              this.isSaving = false
               swalWithBootstrapButtons.fire(
                 'A Angel Signals Brasil Agradece!',
                 'Você será redirecionado para o mini curso europeu do nosso Trader X. Aproveite!!',
