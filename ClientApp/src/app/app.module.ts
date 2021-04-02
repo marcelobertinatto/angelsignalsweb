@@ -16,13 +16,14 @@ import { MisterxComponent } from './misterx/misterx.component';
 import { VipComponent } from './vip/vip.component';
 import { CursoComponent } from './curso/curso.component';
 import { NgxPageScrollModule } from 'ngx-page-scroll';
-import { MisterxOfertaComponent } from './misterx-oferta/misterx-oferta.component';
+import { VipOfertaComponent } from './vip-oferta/vip-oferta.component';
 import { NavMenuOfertaComponent } from './nav-menu-oferta/nav-menu-oferta.component';
 import { CursoOfertaComponent } from './curso-oferta/curso-oferta.component';
 import { NgxSpinnerModule, NgxSpinnerService } from 'ngx-spinner';
+import { MisterxOfertaComponent } from './misterx-oferta/misterx-oferta.component';
 
 @NgModule({
-  declarations: [													
+  declarations: [														
     AppComponent,
     NavMenuComponent,
     HomeComponent,
@@ -34,9 +35,10 @@ import { NgxSpinnerModule, NgxSpinnerService } from 'ngx-spinner';
       MisterxComponent,
       VipComponent,
       CursoComponent,
-      MisterxOfertaComponent,
+      VipOfertaComponent,
       NavMenuOfertaComponent,
-      CursoOfertaComponent
+      CursoOfertaComponent,
+      MisterxOfertaComponent
    ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -55,8 +57,9 @@ import { NgxSpinnerModule, NgxSpinnerService } from 'ngx-spinner';
       { path: 'misterx', component: MisterxComponent },
       { path: 'vip', component: VipComponent },
       { path: 'curso', component: CursoComponent },
-      { path: 'misterx-oferta', component: MisterxOfertaComponent },
-      { path: 'curso-oferta', component: CursoOfertaComponent }
+      { path: 'vip-oferta', component: VipOfertaComponent },
+      { path: 'curso-oferta', component: CursoOfertaComponent },
+      { path: 'misterx-oferta', component: MisterxOfertaComponent }
     ])
   ],
   providers: [NgxSpinnerService],
