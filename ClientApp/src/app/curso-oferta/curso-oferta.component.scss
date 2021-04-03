@@ -219,7 +219,75 @@ a.main-button:hover {
   }
 }
 
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+  .welcome-area .header-text {
+    top: 70% !important;
+    transform: perspective(1px) translateY(-50%) !important;
+    text-align: center;
+  }
+  .welcome-area .header-text p {
+    bottom: 30px;
+  }
+}
 
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+  .welcome-area .header-text {
+    top: 70% !important;
+    transform: perspective(1px) translateY(-50%) !important;
+    text-align: center;
+  }
+  .welcome-area .header-text p {
+    bottom: 30px;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  .welcome-area .header-text {
+    top: 50% !important;
+    transform: perspective(1px) translateY(-50%) !important;
+    text-align: center;
+  }
+  .welcome-area .header-text p {
+    bottom: -10px;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  .welcome-area .header-text {
+    top: 70% !important;
+    transform: perspective(1px) translateY(-50%) !important;
+    text-align: center;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  .welcome-area .header-text {
+    top: 60% !important;
+    transform: perspective(1px) translateY(-50%) !important;
+    text-align: center;
+  }
+}
+
+/* Portrait */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) 
+  and (orientation: portrait) {
+    .welcome-area .header-text {
+      top: 90% !important;
+      transform: perspective(1px) translateY(-50%) !important;
+      text-align: center;
+    }
+    .welcome-area .header-text p {
+      bottom: 30px;
+    }
+}
 
 .features-small-item:hover .icon {
   background-color: #680d0b;
