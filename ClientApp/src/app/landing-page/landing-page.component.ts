@@ -50,11 +50,12 @@ export class LandingPageComponent implements OnInit {
           this.spinner.hide();
           swalWithBootstrapButtons.fire({
             title: 'Último passo para você receber seu curso',
-            text: "Faça o seu cadastro no link da IQ Option clicando no link abaixo e você será redirecionado "+
-            "para a página do mini curso",
+            // text: "Faça o seu cadastro no link da IQ Option clicando no link abaixo e você será redirecionado "+
+            // "para a página do mini curso",
+            text: "Visite o nosso site para você nos conhecer melhor! Lá temos todas as informações necessárias.",
             icon: 'warning',
             showCancelButton: false,
-            confirmButtonText: 'Cadastrar na IQOption',            
+            confirmButtonText: 'Visite agora mesmo!',            
             reverseButtons: true
           }).then((result) => {
             if (result.isConfirmed) {              
@@ -63,7 +64,7 @@ export class LandingPageComponent implements OnInit {
                 'Você será redirecionado para o mini curso europeu do nosso Trader X. Aproveite!!',
                 'success'
               )
-              window.open("https://bit.ly/CadastroIqOptionn","_blank");  
+              window.open("https://www.angelsignals.com","_blank");  
               this._router.navigate(['/video-aulas/']);
               //this.sendTelegramMessage(this.u);            
             }
